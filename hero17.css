@@ -9,9 +9,6 @@
   flex-shrink: 0;
   flex-direction: column;
 }
-.hero17-button1, .hero17-button2 {
-    pointer-events: auto !important;
-}
  
 .hero17-column {
   gap: var(--dl-layout-space-oneandhalfunits);
@@ -57,23 +54,10 @@
 }
  
 .hero17-button1 {
-    width: auto; /* Remove fixed width to allow content-based sizing */
-    height: auto; /* Remove fixed height */
-    display: inline-block; /* Ensure button-like behavior */
-    padding: var(--dl-layout-space-halfunit) var(--dl-layout-space-oneandhalfunits); /* Consistent padding */
-    border-radius: var(--dl-layout-radius-buttonradius); /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    cursor: pointer; /* Show pointer on hover */
-}
-
-.hero17-button2 {
-    width: auto;
-    height: auto;
-    display: inline-block;
-    padding: var(--dl-layout-space-halfunit) var(--dl-layout-space-oneandhalfunits);
-    border-radius: var(--dl-layout-radius-buttonradius);
-    text-decoration: none;
-    cursor: pointer;
+  width: 159px;
+  height: 37px;
+  display: flex;
+  flex-direction: row;
 }
  
 .hero17-text3 {
@@ -194,17 +178,14 @@
 }
  
 @media(max-width: 479px) {
-    .hero17-button1 {
-        width: 100%; /* Maintain responsiveness */
-    }
-    .hero17-button2 {
-        width: 100%; /* Maintain responsiveness */
-    }
-}
-
+  .hero17-button1 {
+    width: 100%;
+  }
   .hero17-actions {
     width: 100%;
     flex-direction: column;
   }
-  
-
+  .hero17-button2 {
+    width: 100%;
+  }
+}
