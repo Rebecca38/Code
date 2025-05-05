@@ -711,14 +711,27 @@
   align-items: flex-start;
   justify-content: center;
 }
- 
-.hero17-button1 {
-  width: 159px;
-  height: 37px;
-  display: flex;
-  flex-direction: row;
+
+a.thq-button-filled, a.thq-button-outline {
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
 }
- 
+.hero17-button1 {
+    padding: var(--dl-layout-space-halfunit) var(--dl-layout-space-oneandhalfunits);
+    border-radius: var(--dl-layout-radius-buttonradius);
+    background-color: transparent;
+    border: 2px solid var(--dl-color-theme-primary1);
+    color: var(--dl-color-theme-primary1);
+}
+
+.hero17-button1:hover {
+    background-color: var(--dl-color-theme-secondary2);
+    color: var(--dl-color-theme-neutral-dark);
+}
 .hero17-text3 {
   text-decoration: none;
 }
@@ -845,9 +858,16 @@
     flex-direction: column;
   }
   .hero17-button2 {
-    width: 100%;
-  }
+    padding: var(--dl-layout-space-halfunit) var(--dl-layout-space-oneandhalfunits);
+    border-radius: var(--dl-layout-radius-buttonradius);
+    background-color: var(--dl-color-theme-primary1);
+    color: var(--dl-color-theme-secondary1);
+    border: none;
 }
+  .hero17-button2:hover {
+    background-color: var(--dl-color-theme-primary2);
+}
+
 
 .features24-wrapper {
   display: contents;
