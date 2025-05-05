@@ -1,14 +1,14 @@
-.navbar {
+/*.navbar {
             display: flex;
             gap: 12px;
             font-family: 'Arial', sans-serif;
-            --background-color: #f0f7ec;
+            background-color: #f0f7ec;
             display: flex;
             justify-content: center;
             align-items: center;
             /* height: 100vh; */
             margin: 0;
-        }
+        } */
         
         .nav-button {
             font-weight: 500;
