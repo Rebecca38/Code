@@ -1,12 +1,24 @@
-@media (max-width: 767px) {
-  .portfolio-text62 {
-    white-space: normal; /* Allows wrapping on small screens */
-  }
+.title2 {
+  white-space: nowrap !important; /* Force the h2 to prevent wrapping */
+  width: auto; /* Ensure the container can expand */
+  display: block; /* Ensure h2 behaves as a block element */
+  overflow: hidden; /* Hides any overflow if the container is too small */
 }
+
 .portfolio-text62 {
   white-space: nowrap; /* Prevents text from wrapping to a new line */
   overflow: hidden; /* Hides any overflow if the container is too small */
   text-overflow: ellipsis; /* Optional: Adds ellipsis (...) if text overflows */
+  display: inline-block; /* Ensure the span respects nowrap */
+}
+
+@media (max-width: 767px) {
+  .title2 {
+    white-space: normal !important; /* Allows wrapping on small screens */
+  }
+  .portfolio-text62 {
+    white-space: normal; /* Allows wrapping on small screens */
+  }
 }
 .navbar {
             display: flex;
