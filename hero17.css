@@ -9,6 +9,9 @@
   flex-shrink: 0;
   flex-direction: column;
 }
+.hero17-button1, .hero17-button2 {
+    pointer-events: auto !important;
+}
  
 .hero17-column {
   gap: var(--dl-layout-space-oneandhalfunits);
