@@ -620,16 +620,8 @@
         ></div
       ></div
     >
-    <script>
-    document.querySelectorAll('.hero17-button1, .hero17-button2').forEach(button => {
-        button.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent parent event interference
-            const href = button.getAttribute('href');
-            if (href) {
-                event.preventDefault(); // Prevent script interference
-                window.location.href = href; // Manually navigate
-            }
-        });
-    });
-</script></body
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script></body
 ></html>
